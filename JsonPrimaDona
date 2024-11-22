@@ -1,0 +1,54 @@
+{
+  "Tienda": {
+    "Nombre": "PrimaDona",
+    "Ubicación": "Mexicali",
+    "Fecha de fundación": "03 de septiembre, 2024",
+    "Estado": "activa",
+
+    "Productos": [
+      {
+        "Producto": "Dona Chocolate",
+        "Precio": 22.00,
+        "Ingredientes": ["harina", "cacao", "azúcar", "leche"]
+      },
+      {
+        "Producto": "Dona Glaseada",
+        "Precio": 20.00,
+        "Ingredientes": ["harina", "azúcar", "leche"]
+      },
+      {
+        "Producto": "Dona Caramelo",
+        "Precio": 25.00,
+        "Ingredientes": ["harina", "caramelo", "azúcar", "leche"]
+      },
+      {
+        "Producto": "Dona Sprinkles",
+        "Precio": 30.00,
+        "Ingredientes": ["harina", "sprinkles", "azúcar", "leche"]
+      },
+      {
+        "Producto": "Dona Azúcar",
+        "Precio": 18.00,
+        "Ingredientes": ["harina", "azúcar", "leche"]
+      }
+    ],
+
+    "Usuarios": [
+      {
+        "id": 1,
+        "Nombre": "María",
+        "Domicilio": "Calle 679",
+        "Número": 1234567890
+      }
+    ],
+
+    "Pedidos": [
+      {
+        "Número de orden": 34,
+        "Orden": ["Dona Chocolate", "Dona Glaseada"],
+        "Número": 1234567890,
+        "Domicilio": "Calle 231"
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+body {
+    background-color: #FEC7D7;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: "Helvetica Rounded";
+    color: #E3688B;
+  }
+
+  .donut-pack {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    font-family: "Helvetica Rounded";
+  }
+
+  .donut-image {
+    width: 100%;
+  }
+
+  .donut-price {
+    font-weight: bold;
+    font-family: "Helvetica Rounded";
+  }
+
+  .button {
+    background-color: #fefefe;
+    border: none;
+    color: #E3688B;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Helvetica Rounded";
+    
+  }

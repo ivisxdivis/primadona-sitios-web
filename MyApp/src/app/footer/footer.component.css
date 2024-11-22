@@ -1,0 +1,19 @@
+/* Footer */
+.footer {
+    background-color: #fff;
+    padding: 16px;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+    font-size: 14.4px;
+    color: #e64573;
+    height: 60px; /* Same fixed height as header */
+  }
+  
+  .social-media a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+    vertical-align: middle;
+    color: #e3688b;
+    padding: auto;
+  }

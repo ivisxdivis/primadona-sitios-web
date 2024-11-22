@@ -1,0 +1,47 @@
+/* Header */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and the nav/profile-icon area */
+    padding: 0 90px;
+    background-color: #fff;
+    color: #e3688b;
+    list-style: none;
+    height: 60px; /* Fixed height */
+  }
+  
+  /* Aligns nav and profile-icon to the right */
+  .nav, .profile-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Adds spacing between nav links */
+  .nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #e3688b;
+    list-style: none;
+    
+  }
+  
+  /* Optional: if you want the profile-icon to have a small gap from the nav links */
+  .profile-icon {
+    margin-left: 15px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e64573; /* Example color */
+  }
+  
+  .cart-notification {
+    background-color: red;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-left: 3px;
+  }
+  

@@ -1,0 +1,88 @@
+/* General Carousel Styling */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Adjust to your preferred width */
+  margin: 0 auto; /* Center the carousel on the page */
+  overflow: hidden;
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Inner container for smooth transitions (remove custom transition) */
+.carousel-inner {
+  display: flex;
+}
+
+/* Each carousel item */
+.carousel-item {
+  flex: 0 0 100%; /* Each item takes full width */
+  height: 400px; /* Control the height of the carousel */
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+/* Images inside the carousel */
+.carousel img {
+  width: 100%;
+  height: 100%; /* Ensure the image takes the full height of the carousel item */
+  object-fit: cover; /* Ensures images fill the area properly without distorting */
+}
+
+/* Carousel Controls */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border: none;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.carousel-control-prev-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 8 8"><path d="M4.5 0L0 4l4.5 4V0z"/></svg>');
+}
+
+.carousel-control-next-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 8 8"><path d="M3.5 0l4.5 4-4.5 4V0z"/></svg>');
+}
+
+/* Visually Hidden (Accessibility) */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

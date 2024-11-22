@@ -1,0 +1,89 @@
+const express = require('express');
+const app = express();
+
+// Rutas
+app.get('/', (req, res) => {
+  res.send('Bienvenido a PrimaDona');
+});
+
+app.get('/tienda', (req, res) => {
+  const tienda = {
+    "Nombre": "PrimaDona",
+    "Ubicación": "Mexicali",
+    "Fecha de fundación": "03 de septiembre, 2024",
+    "Estado": "activa"
+  };
+  res.json(tienda);
+});
+
+app.get('/productos', (req, res) => {
+  const productos = [
+    {
+      "Producto": "Dona Chocolate",
+      "Precio": 22.00,
+      "Ingredientes": ["harina", "cacao", "azúcar", "leche"]
+    },
+    {
+      "Producto": "Dona Glaseada",
+      "Precio": 20.00,
+      "Ingredientes": ["harina", "azúcar", "leche"]
+    },
+    {
+      "Producto": "Dona Caramelo",
+      "Precio": 25.00,
+      "Ingredientes": ["harina", "caramelo", "azúcar", "leche"]
+    },
+    {
+      "Producto": "Dona Sprinkles",
+      "Precio": 30.00,
+      "Ingredientes": ["harina", "sprinkles", "azúcar", "leche"]
+    },
+    {
+      "Producto": "Dona Azúcar",
+      "Precio": 18.00,
+      "Ingredientes": ["harina", "azúcar", "leche"]
+    }
+  ];
+  res.json(productos);
+});
+
+app.get('/usuarios', (req, res) => {
+  const usuarios = [
+    {
+      "Nombre": "María",
+      "Domicilio": "Calle 679",
+      "Número": "123-456-7890"
+    }
+  ];
+  res.json(usuarios);
+});
+
+app.get('/pedidos', (req, res) => {
+  const pedidos = [
+    {
+      "Número de orden": 34,
+      "Orden": ["Dona Chocolate", "Dona Glaseada"],
+      "Número": "123-456-7890",
+      "Domicilio": "Calle 000"
+    }
+  ];
+  res.json(pedidos);
+});
+
+app.post('/usuarios', (req,res)=> {
+    const newItem = req.Body;
+  fs.readFile('JsonPrimmaDona','utf-8',(err,data)=>{
+    const parsedData=json.Parse(data);
+    newItem.id=parsedData.Tienda.Usuarios.length+1;
+    parsedData.Tienda.Usuarios.push(newItem);
+    fs.writeFile('JsonPrimmaDona', JSON.stringify(parsedData,null,2), (err) =>{
+      res.status(201).json(newItem)
+    })
+  })
+})
+
+// Iniciar servidor
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Servidor iniciado en puerto ${port}`);
+});
